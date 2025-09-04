@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <!-- Dashboard Icon -->
+  <symbol id="icon-dashboard" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+  </symbol>
+  
+  <!-- Tasks Icon -->
+  <symbol id="icon-tasks" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+    <polyline fill="none" stroke="currentColor" stroke-width="2" points="14,2 14,8 20,8"/>
+    <line fill="none" stroke="currentColor" stroke-width="2" x1="16" y1="13" x2="8" y2="13"/>
+    <line fill="none" stroke="currentColor" stroke-width="2" x1="16" y1="17" x2="8" y2="17"/>
+    <polyline fill="none" stroke="currentColor" stroke-width="2" points="10,9 9,10 7,8"/>
+  </symbol>
+  
+  <!-- Add Icon -->
+  <symbol id="icon-add" viewBox="0 0 24 24">
+    <line fill="none" stroke="currentColor" stroke-width="2" x1="12" y1="5" x2="12" y2="19"/>
+    <line fill="none" stroke="currentColor" stroke-width="2" x1="5" y1="12" x2="19" y2="12"/>
+  </symbol>
+  
+  <!-- Folder Icon -->
+  <symbol id="icon-folder" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+  </symbol>
+  
+  <!-- Priority High Icon -->
+  <symbol id="icon-priority-high" viewBox="0 0 24 24">
+    <circle fill="currentColor" cx="12" cy="12" r="10"/>
+    <line fill="none" stroke="white" stroke-width="2" x1="12" y1="8" x2="12" y2="12"/>
+    <line fill="none" stroke="white" stroke-width="2" x1="12" y1="16" x2="12.01" y2="16"/>
+  </symbol>
+  
+  <!-- Clock Icon -->
+  <symbol id="icon-clock" viewBox="0 0 24 24">
+    <circle fill="none" stroke="currentColor" stroke-width="2" cx="12" cy="12" r="10"/>
+    <polyline fill="none" stroke="currentColor" stroke-width="2" points="12,6 12,12 16,14"/>
+  </symbol>
+  
+  <!-- Check Icon -->
+  <symbol id="icon-check" viewBox="0 0 24 24">
+    <polyline fill="none" stroke="currentColor" stroke-width="2" points="20,6 9,17 4,12"/>
+  </symbol>
+  
+  <!-- Warning Icon -->
+  <symbol id="icon-warning" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M1 21h22L12 2 1 21z"/>
+    <line fill="none" stroke="white" stroke-width="2" x1="12" y1="9" x2="12" y2="13"/>
+    <line fill="none" stroke="white" stroke-width="2" x1="12" y1="17" x2="12.01" y2="17"/>
+  </symbol>
+  
+  <!-- Settings Icon -->
+  <symbol id="icon-settings" viewBox="0 0 24 24">
+    <circle fill="none" stroke="currentColor" stroke-width="2" cx="12" cy="12" r="3"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+  </symbol>
+  
+  <!-- Logout Icon -->
+  <symbol id="icon-logout" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+    <polyline fill="none" stroke="currentColor" stroke-width="2" points="16,17 21,12 16,7"/>
+    <line fill="none" stroke="currentColor" stroke-width="2" x1="21" y1="12" x2="9" y2="12"/>
+  </symbol>
+  
+  <!-- Close Icon -->
+  <symbol id="icon-close" viewBox="0 0 24 24">
+    <line fill="none" stroke="currentColor" stroke-width="2" x1="18" y1="6" x2="6" y2="18"/>
+    <line fill="none" stroke="currentColor" stroke-width="2" x1="6" y1="6" x2="18" y2="18"/>
+  </symbol>
+  
+  <!-- Menu Icon -->
+  <symbol id="icon-menu" viewBox="0 0 24 24">
+    <line fill="none" stroke="currentColor" stroke-width="2" x1="3" y1="12" x2="21" y2="12"/>
+    <line fill="none" stroke="currentColor" stroke-width="2" x1="3" y1="6" x2="21" y2="6"/>
+    <line fill="none" stroke="currentColor" stroke-width="2" x1="3" y1="18" x2="21" y2="18"/>
+  </symbol>
+  
+  <!-- Document Icon -->
+  <symbol id="icon-document" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+    <polyline fill="none" stroke="currentColor" stroke-width="2" points="14,2 14,8 20,8"/>
+    <line fill="none" stroke="currentColor" stroke-width="2" x1="16" y1="13" x2="8" y2="13"/>
+    <line fill="none" stroke="currentColor" stroke-width="2" x1="16" y1="17" x2="8" y2="17"/>
+    <line fill="none" stroke="currentColor" stroke-width="2" x1="10" y1="9" x2="8" y2="9"/>
+  </symbol>
+</svg>
