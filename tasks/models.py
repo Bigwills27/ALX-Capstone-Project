@@ -20,8 +20,6 @@ class Task(models.Model):
         ('high', 'High'),
     ]
     
-    DEFAULT_CATEGORIES = ['Work', 'Personal', 'Health', 'Learning', 'Shopping']
-    
     title = models.CharField(max_length=200)
     description = models.TextField(blank=True, null=True)
     is_completed = models.BooleanField(default=False)

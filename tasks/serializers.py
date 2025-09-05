@@ -18,7 +18,8 @@ class UserSerializer(serializers.ModelSerializer):
         user.save()
         
         # Create default categories for new user
-        for category_name in Task.DEFAULT_CATEGORIES:
+        default_categories = ['Work', 'Personal', 'Health', 'Learning', 'Shopping']
+        for category_name in default_categories:
             Category.objects.create(name=category_name, user=user)
         
         return user
@@ -46,23 +47,19 @@ class TaskSerializer(serializers.ModelSerializer):
         read_only_fields = ['id', 'created_at', 'updated_at', 'completed_at', 'user']
     
     def validate_due_date(self, value):
-        """Ensure due date is in the future"""
         if value and value <= timezone.now():
             raise serializers.ValidationError("Due date must be in the future.")
         return value
     
     def validate(self, data):
-        """Prevent editing completed tasks unless being marked incomplete"""
         if self.instance and self.instance.is_completed:
-            # If task is completed, only allow changing is_completed field
             if 'is_completed' not in data or data['is_completed'] == True:
-                # Only allow changing other fields if marking as incomplete
                 allowed_fields = {'is_completed'}
                 provided_fields = set(data.keys())
                 invalid_fields = provided_fields - allowed_fields
                 
                 if invalid_fields:
                     raise serializers.ValidationError(
-                        f"Cannot edit completed task. Mark as incomplete first to edit other fields."
+                        "Cannot edit completed task. Mark as incomplete first to edit other fields."
                     )
         return data

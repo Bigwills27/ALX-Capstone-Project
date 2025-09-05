@@ -1,4 +1,4 @@
-// Main Application Logic
+// Task Management Application
 
 // Global state
 let currentUser = null;
@@ -14,9 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // App initialization
 function initializeApp() {
-  console.log("Initializing Task Management App...");
-
-  // Check authentication
   const token = localStorage.getItem("authToken");
   const username = localStorage.getItem("username");
 

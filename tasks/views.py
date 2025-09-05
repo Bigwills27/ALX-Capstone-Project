@@ -24,7 +24,7 @@ class CustomAuthToken(ObtainAuthToken):
         })
 
 @api_view(['POST'])
-@permission_classes([])  # Allow any user to register
+@permission_classes([])
 def register_user(request):
     serializer = UserSerializer(data=request.data)
     if serializer.is_valid():
@@ -43,7 +43,6 @@ class TaskListCreateView(generics.ListCreateAPIView):
     def get_queryset(self):
         queryset = Task.objects.filter(user=self.request.user)
         
-        # Search functionality
         search = self.request.query_params.get('search', None)
         if search:
             queryset = queryset.filter(
@@ -52,27 +51,22 @@ class TaskListCreateView(generics.ListCreateAPIView):
                 Q(category__name__icontains=search)
             )
         
-        # Filter by category
         category = self.request.query_params.get('category', None)
         if category:
             queryset = queryset.filter(category_id=category)
         
-        # Filter by priority
         priority = self.request.query_params.get('priority', None)
         if priority:
             queryset = queryset.filter(priority=priority)
         
-        # Filter by completion status
         completed = self.request.query_params.get('completed', None)
         if completed is not None:
             queryset = queryset.filter(is_completed=completed.lower() == 'true')
         
-        # Sorting functionality
         sort_by = self.request.query_params.get('sort_by', None)
         if sort_by == 'due_date':
             queryset = queryset.order_by('due_date')
         elif sort_by == 'priority':
-            # Custom ordering for priority: high -> medium -> low
             queryset = queryset.extra(
                 select={'priority_order': "CASE WHEN priority='high' THEN 1 WHEN priority='medium' THEN 2 ELSE 3 END"}
             ).order_by('priority_order')
@@ -98,7 +92,6 @@ def toggle_task_completion(request, pk):
         task = Task.objects.get(pk=pk, user=request.user)
         task.is_completed = not task.is_completed
         
-        # Set completion timestamp
         if task.is_completed:
             task.completed_at = timezone.now()
         else:

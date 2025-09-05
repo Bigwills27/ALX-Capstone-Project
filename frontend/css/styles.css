@@ -353,23 +353,6 @@ body {
     margin-top: 24px;
 }
 
-
-
-.user-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.9rem;
-}
-
-/* Main Content */
-.main-content {
-    margin-left: 280px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 .content-header {
     background: var(--white);
     padding: 1.5rem 2rem;
